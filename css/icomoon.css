@@ -31,6 +31,10 @@
     content: "\f0e0"
 }
 
+.icon-envelope-square:before {
+    content: "\f199";
+}
+
 .icon-user:before {
     content: "\f007"
 }
