@@ -6,8 +6,7 @@
     font-style: normal
 }
 
-[class*=" icon-"],
-[class^=icon-] {
+[class*=" icon-"], [class^=icon-] {
     font-family: icomoon !important;
     speak: none;
     font-style: normal;
@@ -29,10 +28,6 @@
 
 .icon-envelope:before {
     content: "\f0e0"
-}
-
-.icon-envelope-square:before {
-    content: "\f199";
 }
 
 .icon-user:before {
