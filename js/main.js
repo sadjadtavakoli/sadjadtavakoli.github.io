@@ -25,62 +25,18 @@
 		}
 	};
 
-	var getHeight = function () {
-		var extraHeight = 0;
-
-		if (isMobile.any()) extraHeight = 50;
-
-		$('#fh5co-main').prop('style').height = $('.fh5co-tab-content.active').height() + extraHeight + "px";
-		// setTimeout(function(){
-		// $('#fh5co-main').stop().animate({
-		// 	'height': $('.fh5co-tab-content.active').height() + extraHeight
-		// });
-		// }, 200);
-
-	};
-
-	var pieChart = function () {
-		$('.chart').easyPieChart({
-			scaleColor: false,
-			lineWidth: 10,
-			lineCap: 'butt',
-			barColor: '#17e7a4',
-			trackColor: "#000000",
-			size: 160,
-			animate: 1000
-		});
-	};
-
-	var tabContainer = function () {
-		getHeight();
-		$(window).resize(function () {
-			getHeight();
-		})
-	};
-
 	var tabClickTrigger = function () {
 		$('.fh5co-tab-menu a').on('click', function (event) {
 			event.preventDefault();
 			var $this = $(this),
-				data = $this.data('tab'),
-				pie = $this.data('pie');
+				data = $this.data('tab');
 
 			// add/remove active class
 			$('.fh5co-tab-menu li').removeClass('active');
 			$this.closest('li').addClass('active');
 
-			$('.fh5co-tab-content.active').addClass('fadeOutDown');
-
-			$('.fh5co-tab-content.active').removeClass('active fadeOutDown fadeInUp');
-			$('.fh5co-tab-content[data-content="' + data + '"]').addClass('fadeInUp active');
-			getHeight();
-
-			if (pie === 'yes') {
-				setTimeout(function () {
-					pieChart();
-				}, 800);
-			}
-
+			$('.fh5co-tab-content.active').removeClass('active');
+			$('.fh5co-tab-content[data-content="' + data + '"]').addClass('active');
 		})
 	};
 	var showMessage = function (messageDiv, message) {
@@ -137,7 +93,6 @@
 
 	};
 	$(function () {
-		tabContainer();
 		tabClickTrigger();
 		contactForm();
 	});
