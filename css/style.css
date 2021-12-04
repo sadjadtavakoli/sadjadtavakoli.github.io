@@ -42,7 +42,8 @@ a:focus, a:hover {
 }
 
 p {
-    margin-bottom: 1.5em
+    margin-bottom: 1.5em;
+    margin-top: 1em
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -305,9 +306,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .fh5co-social li a {
-    font-size: 22px;
+    font-size: 30px;
     color: #fff;
-    padding: 10px 20px;
+    padding: 25px 20px;
     display: -moz-inline-stack;
     display: inline-block;
     zoom: 1;

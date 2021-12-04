@@ -62,6 +62,10 @@
     content: "\e062"
 }
 
+.icon-github:before {
+    content: "\f09b";
+}
+
 .icon-linkedin:before {
     content: "\f0e1"
 }
