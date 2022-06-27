@@ -55,17 +55,17 @@ h1, h2, h3, h4, h5, h6 {
 
 ::-webkit-selection {
     color: #fff;
-    background: #0a8da4
+    background: #205fca
 }
 
 ::-moz-selection {
     color: #fff;
-    background: #0a8da4
+    background: #205fca
 }
 
 ::selection {
     color: #fff;
-    background: #0a8da4
+    background: #205fca
 }
 
 #fh5co-main {
@@ -240,19 +240,39 @@ h1, h2, h3, h4, h5, h6 {
     width: 50%
 }
 
-.fh5co-counter .fh5co-number {
-    font-size: 100px;
+.fh5co-counter .fh5co-bold {
     color: #fff;
-    font-weight: 400;
-    margin: 0;
     padding: 0;
     line-height: .7;
     float: left;
     width: 20%
 }
 
+.bold-number {
+    margin: 0;
+    font-size: 100px;
+    font-weight: 400;
+}
+
+
+.bold-text {
+    margin: 1em 0 0 0;
+    font-size: 40px;
+    font-weight: 400;
+}
+/*.fh5co-bold {*/
+/*    font-size: 100px;*/
+/*    color: #fff;*/
+/*    font-weight: 400;*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    line-height: .7;*/
+/*    float: left;*/
+/*    width: 20%*/
+/*}*/
+
 @media screen and (max-width:768px) {
-    .fh5co-counter .fh5co-number {
+    .fh5co-counter .fh5co-bold {
         width: 100%;
         line-height: 1.2
     }
