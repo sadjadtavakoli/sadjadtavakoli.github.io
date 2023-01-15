@@ -308,11 +308,6 @@ address {
     }
 }
 
-.row {
-    margin-left: -15px;
-    margin-right: -15px
-}
-
 .row:after, .row:before {
     content: " ";
     display: table

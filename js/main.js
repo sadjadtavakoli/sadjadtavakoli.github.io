@@ -51,7 +51,7 @@
 		showMessage($('#form-message-warning'), message)
 	}
 	var showSuccessMessage = function () {
-		showMessage($('#form-message-success'), "Your message was sent, thank you!");
+		showMessage($('#form-message-success'), "Your message is successfully sent!");
 	}
 
 	var contactForm = function () {
