@@ -97,6 +97,8 @@ h1, h2, h3, h4, h5, h6 {
 @media screen and (max-width: 480px) {
     #fh5co-main {
         margin: 0;
+        display: contents;
+        height: 100%;
     }
 }
 
@@ -176,7 +178,7 @@ h1, h2, h3, h4, h5, h6 {
     .fh5co-tab-menu li a .menu-text {
         font-size: 12px;
     }
-    
+
 }
 
 .fh5co-tab-menu li a:after {
@@ -732,6 +734,99 @@ textarea.form-control {
     font-size: 16px;
     font-weight: 500;
     color: #0a8da4
+}
+
+.card {
+    transition: 0.3s;
+    cursor: pointer;
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    border-radius: 7px;
+    margin-bottom: .5em;
+}
+
+.card.bordered-card {
+    background-color: rgba(230, 230, 230, .1);
+}
+
+.card:hover {
+    background-color: rgba(230, 230, 230, .2);
+    color: #ced4da;
+}
+
+.card-header {
+    padding: .3em 1em .3em 1em;
+    border-color: #ced4da;
+    border-radius: 7px 7px 0 0;
+}
+
+.content {
+    display: none;
+    background-color: rgba(230, 230, 230, .1);
+    padding-left: 15px;
+    padding-right: 15px
+}
+
+.left-info {
+    float: left;
+}
+
+.right-info {
+    float: right;
+}
+
+.left-info, .right-info {
+    width: fit-content;
+    max-width: 50%;
+    font-size: medium;
+}
+
+.job-title {
+    font-weight: bold;
+}
+
+.company, .date, .location {
+    font-style: italic;
+}
+
+.location {
+    opacity: .8;
+}
+
+.company, .location {
+    text-align: end;
+
+}
+
+.devider {
+    border-top: solid #bbb;
+    margin: .5em 1em .5em 1em
+}
+
+.text-small {
+    font-size: small;
+}
+
+.card-body li {
+    font-size: medium;
+}
+
+.card-body ul {
+    margin-top: -.5em;
+}
+
+.card-body p {
+    font-size: medium;
+    margin-top: .5em;
+}
+
+.icon-angle-down, .icon-angle-up {
+    place-self: center;
+}
+
+.icon-angle-up {
+    display: none;
 }
 
 @font-face {

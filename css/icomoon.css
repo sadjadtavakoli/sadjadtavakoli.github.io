@@ -18,6 +18,26 @@
     -moz-osx-font-smoothing: grayscale
 }
 
+.icon-th-list:before {
+    content: "\f00b";
+}
+
+.icon-list-alt:before {
+    content: "\f022";
+}
+
+.icon-list:before {
+    content: "\f03a";
+}
+
+.icon-list-ul:before {
+    content: "\f0ca";
+}
+
+.icon-list-ol:before {
+    content: "\f0cb";
+}
+
 .icon-envelope-o:before {
     content: "\f003"
 }
@@ -76,4 +96,11 @@
 
 .icon-phone:before {
     content: "\f095"
+}
+
+.icon-angle-up:before {
+    content: "\f106";
+}
+.icon-angle-down:before {
+    content: "\f107";
 }
