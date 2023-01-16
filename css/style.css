@@ -33,6 +33,7 @@ body {
         font-size: 16px;
         display: flex;
         justify-content: center;
+        flex-direction: column;
     }
 }
 
@@ -120,6 +121,7 @@ h1, h2, h3, h4, h5, h6 {
         background-color: rgba(0, 0, 0, 0.8);
         bottom: 0.5em;
         width: fit-content;
+        place-self: center;
     }
 }
 
