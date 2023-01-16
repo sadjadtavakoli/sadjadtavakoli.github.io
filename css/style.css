@@ -79,7 +79,7 @@ h1, h2, h3, h4, h5, h6 {
 #fh5co-main {
     max-width: 75%;
     height: max-content;
-    margin: 3em auto 5em auto;
+    margin: 3em auto 1em auto;
     position: relative;
     overflow: hidden;
     -webkit-transition: .5s;

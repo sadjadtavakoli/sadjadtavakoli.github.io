@@ -2,7 +2,7 @@
 
     'use strict';
 
-
+    const contantMeTabNumber = "3";
 
     var isMobile = {
         Android: function () {
@@ -37,6 +37,12 @@
 
             $('.fh5co-tab-content.active').removeClass('active');
             $('.fh5co-tab-content[data-content="' + data + '"]').addClass('active');
+            let contactMeDiv = document.getElementsByClassName("fh5co-social")[0];
+            if(data==contantMeTabNumber){
+                contactMeDiv.style.display = "none"
+            }else{
+                contactMeDiv.style.display = "block"
+            }
         })
     };
 
