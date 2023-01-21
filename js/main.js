@@ -2,7 +2,7 @@
 
     'use strict';
 
-    const contantMeTabNumber = "3";
+    const contantMeTabNumber = "4";
 
     var isMobile = {
         Android: function () {

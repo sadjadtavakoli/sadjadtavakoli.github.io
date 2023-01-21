@@ -50,7 +50,7 @@ a:focus, a:hover {
     text-decoration: none
 }
 
-p {
+.fh5co-text p {
     margin-bottom: 1.5em;
     margin-top: 1em
 }
@@ -790,11 +790,16 @@ textarea.form-control {
     border-radius: 7px 7px 0 0;
 }
 
+.no-list-style ul {
+    list-style: none;
+}
+
 .content {
     display: none;
     background-color: rgba(230, 230, 230, .1);
     padding-left: 15px;
-    padding-right: 15px
+    padding-right: 15px;
+    /* cursor: default; */
 }
 
 .left-info {
@@ -815,17 +820,16 @@ textarea.form-control {
     font-weight: bold;
 }
 
-.company, .date, .location {
-    font-style: italic;
-}
-
 .location {
     opacity: .8;
 }
 
-.company, .location {
-    text-align: end;
+.company, .date, .location {
+    font-style: italic;
+}
 
+.right-info {
+    text-align: end;
 }
 
 .devider {
@@ -848,6 +852,7 @@ textarea.form-control {
 .card-body p {
     font-size: medium;
     margin-top: .5em;
+    margin-bottom: .75em;
 }
 
 .icon-angle-down, .icon-angle-up {
