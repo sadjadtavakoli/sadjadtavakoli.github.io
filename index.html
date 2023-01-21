@@ -61,7 +61,7 @@
         <li class="active"><a href="#" data-tab="1"><span class="icon icon-user"></span><span
                     class="menu-text">Profile</span></a></li>
         <li><a href="#" data-tab="2"><span class="icon icon-list"></span>
-                <span class="menu-text wide">Previous Works</span>
+                <span class="menu-text wide" id="previousWorkMenuItem">Previous Works</span>
                 <span class="menu-text thin">Prev Works</span>
             </a></li>
         <li><a href="#" data-tab="3"><span class="icon icon-graduation-cap"></span>
@@ -79,11 +79,11 @@
                         <img id="profile-picture" src="images/profile-sadjad.jpeg" alt="profile picture">
                         <h1>Sadjad Tavakoli</h1>
                         <p>
-                            My name is Sadjad, and I'm a software engineer. I live in Burnaby, studying MSc in Computing
-                            Science at Simon Fraser University. I'll graduate in Jan. 2023, so I'm open to work! Please
+                            My name is Sadjad, and I'm a software engineer. I am studying <a href="https://systems.cs.sfu.ca/people.php">MSc in Computing
+                            Science at Simon Fraser University</a> and will graduate in Jan. 2023, so I'm open to work! Please
                             get in touch with me by giving me a call or sending me an email.
-                            <br> To learn more about me and my experiences, feel free to check the previous works page
-                            or my resume attached below.
+                            <br> To learn more about me and my experiences, feel free to check the <a href="#" id="prev-work-link">previous works page</a>
+                            or <a href="files/Sadjad_CV.pdf">my resume</a>.
 
                         </p>
                     </div>
@@ -104,17 +104,16 @@
                     <div class="col-md-12 fh5co-counter">
                         <div class="fh5co-bold fh5co-left bold-text">Now</div>
                         <div class="fh5co-text">
-                            <p>I'm doing my research in the Software analysis area under the supervision of Prof. Saba
+                            <p>I'm doing my research in the Software analysis area under the supervision of Dr. Saba
                                 Alimadadi.
-                                I'm working on a hybrid change impact analysis approach combining dynamic analysis and
-                                frequent pattern detection techniques.
+                                I'm working on a hybrid change impact analysis approach focused on Node.js applications.
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="fh5co-tab-content" data-content="2">
+        <div class="fh5co-tab-content" id="previousWorks" data-content="2">
             <div class="text-center row-bottom-padded-sm">
                 <h2>My Previous Works</h2>
             </div>
@@ -247,11 +246,11 @@
                         <div class="location">Burnaby, Canada</div>
                     </div>
                 </div>
-                <div class="content">
-                    <div class="card-body no-list-style">
+                <div class="content titleld">
+                    <div class="card-body">
                         <p>
                             <em>Research Areas:</em>
-                        <ul>
+                        <ul class="no-list-style">
                             <li>Software Engineering, Software Analysis, Change Impact Analysis, Dynamic Analysis,
                                 Pattern Detection, Mining Software Repository
                             </li>
@@ -259,18 +258,18 @@
                         </p>
                         <p>
                             <em>Research Topic:</em>
-                        <ul>
-                            <li>I am doing my research under the supervision of Dr. Saba Alimadadi. I am working on a
+                        <ul class="no-list-style">
+                            <li>I am doing my research under the supervision of <a href="http://www.sfu.ca/~saba/">Dr. Saba Alimadadi</a>. I am working on a
                                 hybrid change impact analysis technique for Node.js applications. Our
                                 approach combines dynamic analysis and pattern detection techniques to find the
                                 functions impacted by the
                                 applied changes in the code.</li>
-                            <li>Our tool is developed using JavaScript and Java.</li>
+                            <!-- <li>Our tool is developed using JavaScript and Java.</li> -->
                         </ul>
                         </p>
                         <p>
                             <em>TA Experiences:</em>
-                        <ul>
+                        <ul class="no-list-style">
                             <li>Intro to Software Engineering (CMPT 276); Web-based Information Systems (CMPT 470)</li>
                         </ul>
                         </p>
@@ -291,26 +290,27 @@
                         <div class="location">Tehran, Iran</div>
                     </div>
                 </div>
-                <div class="content">
+                <div class="content titleld">
                     <div class="card-body no-list-style">
                         <p>
                             <em>Thesis:</em>
-                        <ul>
-                            <li>Computing the Cultural Distance between Countries by Mining Twitter Data (Under the supervision of Dr. MohammadAmin Fazly, Published in IEEE)
+                        <ul class="no-list-style">
+                            <li>Computing the Cultural Distance between Countries by Mining Twitter Data (Under the supervision of <a href="http://sina.sharif.edu/~fazli/">Dr. MohammadAmin Fazly</a>)
                             </li>
                         </ul>
                         </p>
                         <p>
                             <em>TA Experiences:</em>
-                        <ul>
+                        <ul class="no-list-style">
                             <li>Fundamentals of Programming (C Language)</li>
                         </ul>
                         </p>
                         <p>
                             <em>Publication:</em>
                         <ul>
-                            <li>Issa Annamoradnejad, MohammadAmin Fazli, Jafar Habibi, and Sadjad Tavakoli. Cross-cultural
-                                studies using social networks data. IEEE Transactions on Computational Social Systems, 6(4):627–636, 2019</li>
+                            <li><a href="https://ieeexplore.ieee.org/document/8746791">Cross-cultural studies using social networks data</a><br>
+                            <i>IEEE Transactions on Computational Social Systems, 6(4):627–636, 2019<br>
+                            Issa Annamoradnejad, MohammadAmin Fazli, Jafar Habibi, and Sadjad Tavakoli</i></li>
                         </ul>
                         </p>
                     </div>

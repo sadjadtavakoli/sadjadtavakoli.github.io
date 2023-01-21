@@ -11,8 +11,7 @@ body {
     font-weight: 300;
     font-size: 20px;
     line-height: 1.5;
-    color: #7f7f7f;
-    color: rgba(255, 255, 255, .7);
+    color: rgba(255, 255, 255, 0.835);
     background-image: url("../images/background.jpg");
     height: 100%;
     position: relative;
@@ -790,7 +789,7 @@ textarea.form-control {
     border-radius: 7px 7px 0 0;
 }
 
-.no-list-style ul {
+ul.no-list-style {
     list-style: none;
 }
 
@@ -799,7 +798,11 @@ textarea.form-control {
     background-color: rgba(230, 230, 230, .1);
     padding-left: 15px;
     padding-right: 15px;
-    /* cursor: default; */
+    cursor: default;
+}
+
+.content.titleld em{
+    color: rgba(255, 255, 255, 0.655);
 }
 
 .left-info {

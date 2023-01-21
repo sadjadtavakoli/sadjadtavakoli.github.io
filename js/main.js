@@ -44,13 +44,23 @@
                 contactMeDiv.style.display = "block"
             }
         })
+
+        $('#prev-work-link').on('click', function(){
+            const evt = new Event( 'click', { bubbles: true } );
+            document.querySelector(`#previousWorkMenuItem`).dispatchEvent( evt )
+        })
     };
 
+    
     var collapsableCards = function () {
         let coll = document.getElementsByClassName("collapsible");
 
         for (let tag of coll) {
-            tag.addEventListener("click", function () {
+            tag.addEventListener("click", function (e) {
+                if($(e.target).closest('.content').length){
+                    console.log($(e.target).closest('.content').length)
+                    return
+                }
                 this.classList.toggle("active");
                 var content = this.querySelector('.content');
                 var arrowdowm = this.querySelector('.icon-angle-down');
@@ -65,7 +75,6 @@
                     content.style.display = "block";
                     arrowdowm.style.display = "none";
                     arrowup.style.display = "table";
-
                 }
             });
         }
