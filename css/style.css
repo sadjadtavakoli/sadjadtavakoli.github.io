@@ -85,16 +85,15 @@ h1, h2, h3, h4, h5, h6 {
 
 @media screen and (max-width:768px) {
     #fh5co-main {
-        margin: 2em 3.3em 5em 3.3em;
+        margin: 2em 3.3em 1em 3.3em;
         max-width: 100%;
     }
 }
 
 @media screen and (max-width: 480px) {
     #fh5co-main {
-        margin: 0;
-        display: contents;
         height: 100%;
+        margin: 1em;
     }
 }
 
@@ -117,6 +116,7 @@ h1, h2, h3, h4, h5, h6 {
         bottom: 0.5em;
         width: fit-content;
         place-self: center;
+        padding: 0 .25em 0 .25em;
     }
 }
 
