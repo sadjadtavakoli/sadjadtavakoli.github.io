@@ -875,6 +875,28 @@ h1, h2 {
     margin-bottom: 1em;
 }
 
+.break {
+    display: none;
+}
+
+@media (max-width:560px) {
+    .break {
+        display: inline;
+    }    
+}
+
+@media (max-width:480px) {
+    .break {
+        display: none;
+    }    
+}
+
+@media (max-width:440px) {
+    .break {
+        display: inline;
+    }    
+}
+
 @font-face {
     font-family: icomoon;
     src: url(https://sadjadtavakoli.github.io/fonts/icomoon/icomoon.eot?srf3rx);
