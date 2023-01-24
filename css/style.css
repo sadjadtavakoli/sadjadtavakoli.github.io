@@ -780,11 +780,11 @@ textarea.form-control {
 }
 
 .card.bordered-card {
-    background-color: rgba(230, 230, 230, .1);
+    background-color: rgb(120, 120, 120, .1);
 }
 
 .card:hover {
-    background-color: rgba(230, 230, 230, .2);
+    background-color: rgba(120, 120, 120, .2);
     color: #ced4da;
 }
 
@@ -800,7 +800,7 @@ ul.no-list-style {
 
 .content {
     display: none;
-    background-color: rgba(230, 230, 230, .1);
+    background-color: rgb(120, 120, 120, .1);
     padding-left: 15px;
     padding-right: 15px;
     cursor: default;
