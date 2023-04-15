@@ -303,7 +303,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .fh5co-counter .fh5co-bold {
-    color: #fff;
     padding: 0;
     line-height: .7;
     float: left;
@@ -587,7 +586,6 @@ textarea.form-control {
     border: 1px solid transparent;
     line-height: 1.5;
     padding: 12px 16px;
-    border-width: 1px;
     border-radius: 5px;
     font-size: 14px;
     font-weight: 400;
@@ -659,7 +657,6 @@ textarea.form-control {
 }
 
 .contact-me {
-    margin-bottom: 0;
     padding: 0;
     width: 60px;
     height: 60px;
@@ -877,6 +874,32 @@ h1, h2 {
 
 .break {
     display: none;
+}
+
+.job-seeking{
+    border: 2px solid red;
+    background: rgb(75, 224, 70);
+    fill-opacity: 0.7;
+    color: black;
+}
+
+
+
+@media screen and (max-width:768px) {
+    .job-seeking {
+        padding: 1em !important;
+
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .job-seeking{
+        display: flex;
+      align-items: center;
+    }
+    .bold-text{
+        margin: auto;
+    }
 }
 
 @media (max-width:560px) {
