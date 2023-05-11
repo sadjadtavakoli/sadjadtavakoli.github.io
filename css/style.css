@@ -298,9 +298,25 @@ h1, h2, h3, h4, h5, h6 {
 
 #profile-picture {
     margin-bottom: 1.5em;
-    width: 50%;
+    width: 30%;
     border-radius: 7px;
 }
+
+
+@media screen and (max-width:768px) {
+    #profile-picture {
+        width: 40%;
+    }
+}
+
+@media screen and (min-width:768px) {
+    #profile-picture {
+        float: left;
+        margin-right: 1em;
+        margin-bottom: 0em;
+    }
+}
+
 
 .fh5co-counter .fh5co-bold {
     padding: 0;
